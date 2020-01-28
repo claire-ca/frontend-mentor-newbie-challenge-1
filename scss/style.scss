@@ -1,0 +1,131 @@
+@import 'partials/variables',
+        'partials/mixins';
+
+// Base Styles
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: $body-copy;
+    font-family: $font-family;
+    
+}
+
+body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: $color-neutral-1;
+}
+
+h2 {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 50px;
+}
+// Layout Styles
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px -4px $color-neutral-2;
+}
+
+.top-headline {
+    color: $color-primary-1;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    letter-spacing: 0.01em;
+}
+
+.headline {
+    color: $color-primary-2;
+}
+
+#primary-content {
+    @include section-styles();
+    background-color: $white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    p {
+        color: $color-neutral-2;
+        line-height: 1.8;
+    }
+}
+
+#subscription {
+    @include section-styles();
+    background-color: $color-primary-1;
+    color: $white;
+    p {
+        margin-bottom: 10px;
+    }
+    .price {
+        font-size: 2.3em;
+        padding-right: 10px;
+    }
+    .time {
+        opacity: 0.5;
+    }
+    .sign-up-btn {
+        background-color: $color-primary-2;
+        color: $white;
+        width: 100%;
+        padding: 15px 0;
+        border-radius: 5px;
+        font-size: 1.2em;
+        margin-top: 20px;
+        box-shadow: 0 5px 10px darken($color-neutral-2, 15%);
+    }
+}
+
+#reasons {
+    @include section-styles();
+    background-color: lighten($color-primary-1, 5%);
+    color: $white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    ul {
+        list-style-type: none;
+        opacity: 0.8;
+        li {
+            padding-bottom: 0.3em;
+        }
+    }
+}
+
+@media screen and (min-width: 675px) {
+    body {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20vh;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    #primary-content,
+    #subscription,
+    #reasons {
+        padding: 40px;
+    }
+    
+    #subscription,
+    #reasons {
+        width: 50%;
+        
+    }
+
+    #subscription {
+        border-bottom-left-radius: 5px;
+    }
+
+    #reasons {
+        border-bottom-left-radius: 0;
+    }
+}

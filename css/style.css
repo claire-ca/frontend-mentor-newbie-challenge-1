@@ -1,2 +1,153 @@
+/* line 6, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+
+/* line 15, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+body {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #e5eff5;
+}
+
+/* line 21, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+h2 {
+  font-size: 1.25em;
+  margin-bottom: 20px;
+}
+
+/* line 26, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+footer {
+  margin-top: 50px;
+}
+
+/* line 31, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px -4px #98a6bd;
+}
+
+/* line 37, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+.top-headline {
+  color: #2ab2af;
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  letter-spacing: 0.01em;
+}
+
+/* line 44, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+.headline {
+  color: #c0df34;
+}
+
+/* line 48, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+#primary-content {
+  padding: 30px 20px;
+  text-align: left;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* line 53, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+#primary-content p {
+  color: #98a6bd;
+  line-height: 1.8;
+}
+
+/* line 59, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+#subscription {
+  padding: 30px 20px;
+  text-align: left;
+  background-color: #2ab2af;
+  color: #fff;
+}
+
+/* line 63, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+#subscription p {
+  margin-bottom: 10px;
+}
+
+/* line 66, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+#subscription .price {
+  font-size: 2.3em;
+  padding-right: 10px;
+}
+
+/* line 70, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+#subscription .time {
+  opacity: 0.5;
+}
+
+/* line 73, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+#subscription .sign-up-btn {
+  background-color: #c0df34;
+  color: #fff;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin-top: 20px;
+  box-shadow: 0 5px 10px #6a7da0;
+}
+
+/* line 85, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+#reasons {
+  padding: 30px 20px;
+  text-align: left;
+  background-color: #2fc6c4;
+  color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* line 91, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+#reasons ul {
+  list-style-type: none;
+  opacity: 0.8;
+}
+
+/* line 94, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+#reasons ul li {
+  padding-bottom: 0.3em;
+}
+
+@media screen and (min-width: 675px) {
+  /* line 101, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+  body {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+  }
+  /* line 108, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+  .flex {
+    display: flex;
+  }
+  /* line 112, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+  #primary-content,
+  #subscription,
+  #reasons {
+    padding: 40px;
+  }
+  /* line 118, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+  #subscription,
+  #reasons {
+    width: 50%;
+  }
+  /* line 124, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+  #subscription {
+    border-bottom-left-radius: 5px;
+  }
+  /* line 128, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+  #reasons {
+    border-bottom-left-radius: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
