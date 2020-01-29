@@ -78,7 +78,17 @@ footer {
         border-radius: 5px;
         font-size: 1.2em;
         margin-top: 20px;
-        box-shadow: 0 5px 10px darken($color-neutral-2, 15%);
+        box-shadow: 0 5px 10px darken($color-neutral-2, 30%);
+        text-shadow: 1px 1px 5px grey;
+        cursor: pointer;
+        &:hover {
+            background-color: darken($color-primary-2, 8%);
+            transition: background-color ease-in 0.2s;
+        }
+        &:active {
+            background-color: darken($color-primary-2, 12%);
+            transform: translateY(2px);
+        }
     }
 }
 
