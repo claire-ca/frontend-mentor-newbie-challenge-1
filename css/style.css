@@ -1,167 +1,165 @@
-/* line 6, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-* {
+html {
+  font-size: 100%;
+}
+
+*, *::before, *::after {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: "Karla", sans-serif;
 }
 
-/* line 15, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
+h1, h2, h3 {
+  margin: 0;
+  line-height: 1.1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  box-sizing: border-box;
   background-color: #e5eff5;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+  padding: 1.8rem;
 }
 
-/* line 21, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-h2 {
-  font-size: 1.25em;
-  margin-bottom: 20px;
+@media screen and (min-width: 62.5em) {
+  body {
+    padding: 8rem;
+  }
 }
 
-/* line 26, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-footer {
-  margin-top: 50px;
+.card > section {
+  padding: 2.125rem 1.5rem;
 }
 
-/* line 31, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-.container {
-  width: 80%;
-  margin: 0 auto;
-  box-shadow: 0 0 10px -4px #98a6bd;
+@media screen and (min-width: 62.5em) {
+  .card > section {
+    padding: 2.5rem;
+  }
 }
 
-/* line 37, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-.top-headline {
-  color: #2ab2af;
-  margin-bottom: 30px;
-  font-size: 1.5em;
-  letter-spacing: 0.01em;
+.card {
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 81, 171, 0.15);
+  overflow: hidden;
 }
 
-/* line 44, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-.headline {
-  color: #c0df34;
+@media screen and (min-width: 62.5em) {
+  .card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "primary-section primary-section";
+    max-width: 39.6875rem;
+    margin: auto;
+  }
 }
 
-/* line 48, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-#primary-content {
-  padding: 30px 20px;
-  text-align: left;
+.primary-section {
   background-color: #fff;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  color: #98a6bd;
 }
 
-/* line 53, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-#primary-content p {
-  color: #98a6bd;
+.primary-section h1 {
+  color: #2ab2af;
+  font-size: 1.25rem;
+  padding-bottom: 1.875rem;
+}
+
+.primary-section h2 {
+  color: #c0df34;
+  font-size: 0.9375rem;
+  padding-bottom: 1.5rem;
+}
+
+.primary-section p {
+  font-size: 0.875rem;
   line-height: 1.8;
 }
 
-/* line 59, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-#subscription {
-  padding: 30px 20px;
-  text-align: left;
+@media screen and (min-width: 62.5em) {
+  .primary-section {
+    grid-area: primary-section;
+  }
+  .primary-section h1 {
+    font-size: 1.5rem;
+  }
+  .primary-section h2 {
+    font-size: 1.125rem;
+  }
+  .primary-section p {
+    font-size: 1rem;
+  }
+}
+
+.secondary-section {
   background-color: #2ab2af;
-  color: #fff;
 }
 
-/* line 63, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-#subscription p {
-  margin-bottom: 10px;
+.secondary-section h2 {
+  font-size: 1.125rem;
+  padding-bottom: 1.75rem;
 }
 
-/* line 66, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-#subscription .price {
-  font-size: 2.3em;
-  padding-right: 10px;
+@media screen and (min-width: 62.5em) {
+  .secondary-section h2 h2 {
+    font-size: 1.125rem;
+  }
 }
 
-/* line 70, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-#subscription .time {
+.secondary-section .subscription {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.secondary-section .subscription :not(:first-child) {
   opacity: 0.5;
 }
 
-/* line 73, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-#subscription .sign-up-btn {
+.secondary-section .price {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-right: 0.75rem;
+}
+
+.secondary-section .sign-up {
   background-color: #c0df34;
-  color: #fff;
-  width: 100%;
-  padding: 15px 0;
   border-radius: 5px;
-  font-size: 1.2em;
-  margin-top: 20px;
-  box-shadow: 0 5px 10px #4a5973;
-  text-shadow: 1px 1px 5px grey;
-  cursor: pointer;
-}
-
-/* line 84, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-#subscription .sign-up-btn:hover {
-  background-color: #accb20;
-  transition: background-color ease-in 0.2s;
-}
-
-/* line 88, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-#subscription .sign-up-btn:active {
-  background-color: #9db91d;
-  transform: translateY(2px);
-}
-
-/* line 95, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-#reasons {
-  padding: 30px 20px;
-  text-align: left;
-  background-color: #2fc6c4;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
   color: #fff;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  display: block;
+  font-weight: 700;
+  margin-top: 2rem;
+  padding: 0.9375rem;
+  text-align: center;
 }
 
-/* line 101, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-#reasons ul {
-  list-style-type: none;
-  opacity: 0.8;
+.tertiary-section {
+  background-color: #4abdbd;
 }
 
-/* line 104, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-#reasons ul li {
-  padding-bottom: 0.3em;
+.tertiary-section h2 {
+  font-size: 1.125rem;
+  padding-bottom: 1.75rem;
 }
 
-@media screen and (min-width: 675px) {
-  /* line 111, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-  body {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20vh;
-  }
-  /* line 118, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-  .flex {
-    display: flex;
-  }
-  /* line 122, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-  #primary-content,
-  #subscription,
-  #reasons {
-    padding: 40px;
-  }
-  /* line 128, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-  #subscription,
-  #reasons {
-    width: 50%;
-  }
-  /* line 134, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-  #subscription {
-    border-bottom-left-radius: 5px;
-  }
-  /* line 138, ../../../../../Users/clairecalder/Documents/GitHub/frontend-mentor-newbie-challenge-1/scss/style.scss */
-  #reasons {
-    border-bottom-left-radius: 0;
-  }
+.tertiary-section li {
+  font-size: 0.875rem;
+  padding-bottom: 0.25rem;
+  opacity: 0.65;
 }
 
-/*# sourceMappingURL=style.css.map */
+@media screen and (min-width: 62.5em) {
+  .tertiary-section h2 {
+    font-size: 1.125rem;
+  }
+}
